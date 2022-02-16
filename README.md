@@ -1,41 +1,43 @@
+# Portfolio: setup and mobile version skeleton
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+This is my first Microverse project
 
-Portfolio: setup and mobile version skeleton
+# Pull request
+
+done in this pull request so that others can read what is being worked on
+
+# Hello Microverse
+
+> This is just simple project where i learn how to use GitHub
 
 ## Built With
 
 - HTML/CSS
-- Figma
-- linters
+  -Figma
+  -Linters
+  -GitHub
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Run these commands to have this project on you local PC
 
-To get a local copy up and running follow these simple example steps.
+```shell
+git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton
+cd Portfolio-setup-and-mobile-version-skeleton
+```
 
-### Prerequisites
+## Author
 
-### Setup
+👤 **Melaku Eshetu**
 
-### Install
+- GitHub: [@Melaku05](https://github.com/Melaku05)
 
-### Usage
+## Show your support
 
-### Run tests
-
-### Deployment
-
-## Authors
-
-👤 **Melaku**
-
-- GitHub: [@melaku05](https://github.com/melaku05)
-  linkedinhandle)
+Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+free to use it
