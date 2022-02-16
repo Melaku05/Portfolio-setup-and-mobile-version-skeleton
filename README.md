@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This is my first Microverse project
+For the first milestone in the process of creating portfolio website
 
 # Pull request
 
@@ -10,7 +10,7 @@ done in this pull request so that others can read what is being worked on
 
 # Hello Microverse
 
-> This is just simple project where i learn how to use GitHub
+> This is just mobile first home page project
 
 ## Built With
 
