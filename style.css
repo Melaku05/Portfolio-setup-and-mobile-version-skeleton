@@ -6,7 +6,6 @@
 
 .container {
   width: 375px;
-  height: 92px;
   margin: 0 auto;
   background-color: #3c3a39;
 }
@@ -29,6 +28,11 @@
   font-size: 18px;
   color: #fff;
   margin: 24px;
+}
+
+.placeholder a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .normal-button {
@@ -71,9 +75,10 @@
   font-weight: 400;
   font-style: normal;
   font-size: 56px;
+  list-style-type: none;
 }
 
-span {
+h3 {
   font-size: 24px;
   color: #fff5e1;
   font-style: normal;
@@ -85,6 +90,8 @@ span {
   font-size: 16px;
   color: #fff;
   padding: 12px 24px;
+  line-height: 100%;
+  font-style: normal;
 }
 
 .contact ul {
