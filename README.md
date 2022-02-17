@@ -1,73 +1,43 @@
+# Portfolio: setup and mobile version skeleton
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+For the first milestone in the process of creating portfolio website
 
-> Description the project.
+# Pull request
 
+done in this pull request so that others can read what is being worked on
+
+# Hello Microverse
+
+> This is just mobile first home page project
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML/CSS
+  -Figma
+  -Linters
+  -GitHub
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Run these commands to have this project on you local PC
 
+```shell
+git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton
+cd Portfolio-setup-and-mobile-version-skeleton
+```
 
-To get a local copy up and running follow these simple example steps.
+## Author
 
-### Prerequisites
+👤 **Melaku Eshetu**
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- GitHub: [@Melaku05](https://github.com/Melaku05)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+free to use it
