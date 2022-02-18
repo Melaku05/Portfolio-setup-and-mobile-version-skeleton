@@ -218,7 +218,7 @@ h3 {
 
 .see-projects {
   color: #091e42;
-  margin: 0 20px 0 20px;
+  margin: 17px 20px 0 20px;
 }
 
 .tags {
@@ -229,8 +229,9 @@ h3 {
 }
 
 .tag-border {
-  margin-left: 24px;
   padding: 8px;
+  padding-left: 24px;
+  text-align: center;
   font-weight: 300;
   font-size: 16px;
   border: 1px solid lightgray;
@@ -441,6 +442,10 @@ ul .img-1 {
   background: #ff6b00;
   border: 1px solid #ff6b00;
   transition: all 0.1s ease-in;
+}
+
+.btn-see {
+  margin-bottom: 20px;
 }
 
 .btn:hover {
