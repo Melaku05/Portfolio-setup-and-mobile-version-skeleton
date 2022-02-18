@@ -237,12 +237,12 @@ h3 {
   grid-gap: 20px;
 }
 
-/*
-(rgba(38, 38, 38, 0) 1%, rgba(38, 38, 38, 1) 62%)
-*/
+/* prettier-ignore */
+
 .card {
   margin: 0 20px;
-  background: linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 1)),
+  background:
+    linear-gradient(rgba(38, 38, 38, 0), rgba(38, 38, 38, 1)),
     url("images/mask.png");
   background-position: 50%;
 }
