@@ -207,6 +207,11 @@ h3 {
   grid-row: 2;
 }
 
+.grid-img {
+  display: grid;
+  padding: 0 24px;
+}
+
 .img-placeholder {
   margin: 0 20px 20px 20px;
 }
@@ -291,7 +296,7 @@ h3 {
 .bg-image-2 {
   background-image: url("images/illust.png");
   background-repeat: no-repeat;
-  background-position: 100% 33%;
+  background-position: 100% 24.5%;
 }
 
 .about {
@@ -307,7 +312,7 @@ h3 {
 
 .divider {
   margin: 0 20px;
-  padding: 0 24px;
+  padding: 12px 24px;
   display: flex;
   justify-content: center;
 }
@@ -325,10 +330,11 @@ h3 {
 .frameworks,
 .skills-other {
   padding: 8px 12px;
+  font-weight: 700;
 }
 
 .languages {
-  padding: 8px 12px;
+  padding: 8px 0;
 }
 
 .language-heading {
@@ -344,6 +350,11 @@ ul .img {
   justify-content: center;
 }
 
+.language-heading .h-text-white {
+  font-size: 30px;
+  font-style: normal;
+}
+
 .language-list {
   display: flex;
   align-items: center;
@@ -356,6 +367,9 @@ ul .img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 42.67px;
 }
 
 /* form */
