@@ -379,9 +379,12 @@ ul .img {
 }
 
 .form-text {
+  color: #172b4d;
   font-size: 32px;
+  font-style: normal;
   text-align: center;
   margin: 20px;
+  line-height: 114%;
 }
 
 input {

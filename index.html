@@ -371,13 +371,15 @@
         chat please get in touch.
       </h2>
       <div class="form">
-        <form>
+        <form action="https://formspree.io/f/mzborojb" method="POST">
           <label for="fullname"></label>
           <input
             type="text"
             id="fullname"
             name="fullname"
             placeholder="Full name"
+            required 
+            maxlength="30"
           />
           <label for="email"></label>
           <input
@@ -385,6 +387,7 @@
             name="email"
             id="email"
             placeholder="Email address"
+            required 
           />
           <label for="feedback"></label>
           <textarea
@@ -393,6 +396,8 @@
             id="feedback"
             name="feedback"
             placeholder="Enter text here"
+            required 
+            maxlength="500"
           ></textarea>
           <div class="btn-align">
             <input type="submit" class="btn-3" value="Get in Touch" />
