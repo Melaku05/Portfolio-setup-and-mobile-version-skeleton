@@ -41,6 +41,7 @@ a {
   align-items: center;
   background: var(--font-color-2);
 }
+
 .btn-2,
 .btn-3,
 .btn-4 {
@@ -81,9 +82,9 @@ button {
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
 }
-/* done */
+
 .header {
   font-family: var(--font-round);
   color: #f55800;
@@ -94,16 +95,9 @@ li {
   line-height: 81.5px;
 }
 
-/* Nav styling */
-
+/* Linter ignore */
 nav {
-  background: linear-gradient(
-      to left,
-      var(--nav-background) 50%,
-      var(--main-background) 50%
-    )
-    right;
-  background-size: 200%;
+  background: #3e3c3c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -197,7 +191,6 @@ main {
 .icons-container {
   margin-top: 10px;
   text-align: left;
-  /* margin-left: -120px; */
   display: flex;
 }
 
@@ -220,7 +213,6 @@ main {
 .work {
   background: var(--font-color-1);
   color: var(--main-background);
-  /* padding: 100px 0; */
 }
 
 .work-header {
@@ -451,15 +443,13 @@ footer {
   }
 
   .icons-container {
-    /* margin-left: 20px;
-    margin-right: 50px; */
     flex-direction: column;
   }
 
   .main-icon {
     margin: 12px;
   }
-  /* done */
+
   .illustration-container {
     width: 520px;
     height: 710px;
@@ -582,16 +572,13 @@ footer {
 
   .container {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
   }
 }
+
 .container {
   margin: 0 auto;
   background-color: #3c3a39;
-}
-
-li {
-  list-style-type: none;
 }
 
 .bg-color-2 {
@@ -663,7 +650,7 @@ li {
   justify-content: flex-start;
   gap: 10px;
   margin: 10px auto;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .btn-group {
@@ -696,12 +683,6 @@ ul .img-1 {
 
 .btn-see {
   margin: 20px 0;
-}
-
-.btn:hover {
-  background: #221d12;
-  border: 1px solid #f55800;
-  color: #ff6b00;
 }
 
 .btn-2:hover {
