@@ -36,6 +36,7 @@ a {
   letter-spacing: 0.03em;
   height: 48px;
   display: flex;
+  padding: 12px;
   justify-content: center;
   align-items: center;
   background: var(--font-color-2);
@@ -627,8 +628,7 @@ footer {
 }
 
 .tag-border {
-  padding: 8px;
-  padding-left: 24px;
+  padding: 10px;
   text-align: center;
   font-weight: 300;
   font-size: 16px;
@@ -679,7 +679,8 @@ ul .img-1 {
 }
 
 .btn-see {
-  margin: 20px 0;
+  margin: 34px 0;
+  padding: 12px;
 }
 
 .btn-2:hover {
