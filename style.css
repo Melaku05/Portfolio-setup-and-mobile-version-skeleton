@@ -20,7 +20,6 @@
 }
 
 body {
-  /* background-color: var(--main-background); */
   color: var(--font-color-1);
   font-family: var(--font-inter);
   font-weight: normal;
@@ -97,7 +96,13 @@ li {
 
 /* Linter ignore */
 nav {
-  background: #3e3c3c;
+  background: linear-gradient(
+      to left,
+      var(--nav-background) 50%,
+      var(--main-background) 50%
+    )
+    right;
+  background-size: 200%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,7 +253,7 @@ main {
 .about-illustration {
   width: 100%;
   text-align: right;
-  padding-top: -80px;
+  margin-bottom: 60px;
 }
 
 .about-line {
@@ -511,6 +516,7 @@ footer {
     background: url("../assest/illustration-about-me.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: left;
     float: right;
   }
 
@@ -536,6 +542,7 @@ footer {
   }
 
   .contact-description {
+    color: #262626;
     width: 455px;
     height: 256px;
     font-weight: bold;
@@ -543,6 +550,7 @@ footer {
     line-height: 52px;
     text-align: left;
     margin: 24px 0;
+    vertical-align: center;
   }
 
   form {
@@ -573,6 +581,10 @@ footer {
   .container {
     margin: 0 auto;
     padding: 0;
+  }
+  #work {
+    margin: 0 141px;
+    align-content: center;
   }
 }
 
@@ -650,7 +662,7 @@ footer {
   justify-content: flex-start;
   gap: 10px;
   margin: 10px auto;
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 .btn-group {
