@@ -55,14 +55,6 @@ a {
   transition: all 0.1s ease-in;
 }
 
-/* button hover */
-
-.btn:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
 .btn:active {
   background: #e05304;
   color: var(--font-color-1);
@@ -71,6 +63,11 @@ a {
 .btn:disabled {
   background: #f4f1f0;
   color: #5b5957;
+}
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 button {
@@ -94,14 +91,8 @@ li {
   line-height: 81.5px;
 }
 
-/* Linter ignore */
 nav {
-  background: linear-gradient(
-      to left,
-      var(--nav-background) 50%,
-      var(--main-background) 50%
-    )
-    right;
+  background: #3e3c3c;
   background-size: 200%;
   display: flex;
   justify-content: space-between;
@@ -550,7 +541,7 @@ footer {
     line-height: 52px;
     text-align: left;
     margin: 24px 0;
-    vertical-align: center;
+    vertical-align: middle;
   }
 
   form {
@@ -578,13 +569,10 @@ footer {
     align-self: flex-start;
   }
 
-  .container {
-    margin: 0 auto;
-    padding: 0;
-  }
   #work {
     margin: 0 141px;
     align-content: center;
+    align-content: ;
   }
 }
 
@@ -662,7 +650,7 @@ footer {
   justify-content: flex-start;
   gap: 10px;
   margin: 10px auto;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .btn-group {
