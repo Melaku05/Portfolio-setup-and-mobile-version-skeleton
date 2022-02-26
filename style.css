@@ -57,12 +57,6 @@ a {
 
 /* button hover */
 
-.btn:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
 .btn:active {
   background: #e05304;
   color: var(--font-color-1);
@@ -71,6 +65,12 @@ a {
 .btn:disabled {
   background: #f4f1f0;
   color: #5b5957;
+}
+
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 button {
@@ -94,7 +94,6 @@ li {
   line-height: 81.5px;
 }
 
-/* Linter ignore */
 nav {
   background: #3e3c3c;
   background-size: 200%;
@@ -155,7 +154,6 @@ nav {
   border-bottom: 1px solid #fff5e1;
 }
 
-/* main */
 main {
   height: 560px;
   display: flex;
@@ -209,7 +207,6 @@ main {
   display: block;
 }
 
-/* WORK SECTION */
 .work {
   background: var(--font-color-1);
   color: var(--main-background);
@@ -222,7 +219,6 @@ main {
   font-weight: normal;
 }
 
-/* About Section */
 .about {
   text-align: center;
 }
