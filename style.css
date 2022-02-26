@@ -64,6 +64,7 @@ a {
   background: #f4f1f0;
   color: #5b5957;
 }
+
 .btn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
@@ -572,7 +573,6 @@ footer {
   #work {
     margin: 0 141px;
     align-content: center;
-    align-content: ;
   }
 }
 
