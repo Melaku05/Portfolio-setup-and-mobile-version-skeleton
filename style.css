@@ -565,9 +565,10 @@ footer {
   .submit {
     align-self: flex-start;
   }
+  
   .container {
     margin: 0 auto;
-    padding: 0;
+    padding: 1px;
   }
   
   #work {
