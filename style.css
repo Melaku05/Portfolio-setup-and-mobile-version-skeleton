@@ -55,8 +55,15 @@ a {
   transition: all 0.1s ease-in;
 }
 
-n
+.btn:active {
+  background: #e05304;
+  color: var(--font-color-1);
+}
 
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
 .btn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
@@ -110,28 +117,6 @@ li {
   color: #5b5957;
 }
 
-button {
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #f55800;
-}
-
-li {
-  list-style-type: none;
-}
-
-.header {
-  font-family: var(--font-round);
-  color: #f55800;
-  font-weight: 400;
-  font-size: 72px;
-  letter-spacing: 0.37px;
-  margin: 10px 0;
-  line-height: 81.5px;
-}
-
-/* Linter ignore */
 nav {
   background: #3e3c3c;
   display: flex;
