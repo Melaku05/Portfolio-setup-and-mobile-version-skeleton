@@ -11,11 +11,13 @@
   grid-template-rows: 1fr 1fr;
   position: relative;
   width: 100%;
+  grid-auto-flow: row;
+  grid-row: auto;
 }
 
 #main,
 .about {
-  background-color: black;
+  background-color: #262626;
 }
 
 .one {
