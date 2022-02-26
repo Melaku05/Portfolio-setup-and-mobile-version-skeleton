@@ -565,7 +565,6 @@ footer {
   .submit {
     align-self: flex-start;
   }
-  
   .container {
     margin: 0 auto;
     padding: 0;
@@ -576,7 +575,6 @@ footer {
     align-content: center;
   }
 }
-
 .container {
   margin: 0 auto;
   background-color: #3c3a39;
