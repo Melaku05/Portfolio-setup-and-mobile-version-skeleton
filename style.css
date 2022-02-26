@@ -55,7 +55,44 @@ a {
   transition: all 0.1s ease-in;
 }
 
-/* button hover */
+n
+
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.btn:active {
+  background: #e05304;
+  color: var(--font-color-1);
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #f55800;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  font-family: var(--font-round);
+  color: #f55800;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: 0.37px;
+  margin: 10px 0;
+  line-height: 81.5px;
+}
 
 .btn:hover {
   background: #fff5e1;
@@ -96,13 +133,7 @@ li {
 
 /* Linter ignore */
 nav {
-  background: linear-gradient(
-      to left,
-      var(--nav-background) 50%,
-      var(--main-background) 50%
-    )
-    right;
-  background-size: 200%;
+  background: #3e3c3c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -550,7 +581,7 @@ footer {
     line-height: 52px;
     text-align: left;
     margin: 24px 0;
-    vertical-align: center;
+    vertical-align: middle;
   }
 
   form {
@@ -582,6 +613,7 @@ footer {
     margin: 0 auto;
     padding: 0;
   }
+  
   #work {
     margin: 0 141px;
     align-content: center;
@@ -662,7 +694,8 @@ footer {
   justify-content: flex-start;
   gap: 10px;
   margin: 10px auto;
-  padding-left: 0px;
+  padding-left: 0;
+
 }
 
 .btn-group {
