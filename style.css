@@ -565,13 +565,12 @@ footer {
   .submit {
     align-self: flex-start;
   }
-
   .container {
-    margin: 0 auto;
+    margin:0 auto;
     padding: 0;
   }
   
-  # work {
+  #work {
     margin: 0 141px;
     align-content: center;
   }
