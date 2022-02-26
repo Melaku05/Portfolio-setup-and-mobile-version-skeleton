@@ -152,7 +152,6 @@ nav {
   border-bottom: 1px solid #fff5e1;
 }
 
-/* main */
 main {
   height: 560px;
   display: flex;
@@ -206,7 +205,6 @@ main {
   display: block;
 }
 
-/* WORK SECTION */
 .work {
   background: var(--font-color-1);
   color: var(--main-background);
@@ -219,7 +217,6 @@ main {
   font-weight: normal;
 }
 
-/* About Section */
 .about {
   text-align: center;
 }
