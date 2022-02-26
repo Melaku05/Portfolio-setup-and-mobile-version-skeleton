@@ -70,16 +70,6 @@ a {
   color: #f55800;
 }
 
-.btn:active {
-  background: #e05304;
-  color: var(--font-color-1);
-}
-
-.btn:disabled {
-  background: #f4f1f0;
-  color: #5b5957;
-}
-
 button {
   border: none;
   outline: none;
@@ -99,22 +89,6 @@ li {
   letter-spacing: 0.37px;
   margin: 10px 0;
   line-height: 81.5px;
-}
-
-.btn:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
-.btn:active {
-  background: #e05304;
-  color: var(--font-color-1);
-}
-
-.btn:disabled {
-  background: #f4f1f0;
-  color: #5b5957;
 }
 
 nav {
@@ -176,7 +150,6 @@ nav {
   border-bottom: 1px solid #fff5e1;
 }
 
-/* main */
 main {
   height: 560px;
   display: flex;
@@ -230,7 +203,6 @@ main {
   display: block;
 }
 
-/* WORK SECTION */
 .work {
   background: var(--font-color-1);
   color: var(--main-background);
@@ -243,7 +215,6 @@ main {
   font-weight: normal;
 }
 
-/* About Section */
 .about {
   text-align: center;
 }
