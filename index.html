@@ -4,479 +4,295 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Poppins&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-
-    <!--stylesheet-->
-
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="a.css" />
-
-    <title>Eshetu Melaku portfolio desktop version</title>
+    <title>Responsive website</title>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#">Eshetu Melaku</a>
+    <div class="main-wrapper">
+      <div class="wrapper">
+        <header class="toolbar">
+          <div class="right-side">
+            <div class="logo"><a href="#">My logo</a></div>
+          </div>
 
-        <button type="button" id="menu-container">
-          <span class="open" id="menu"></span>
-        </button>
-        <ul class="nav-elements">
-          <li class="nav-list"><a href="#">Portfolio</a></li>
-          <li class="nav-list"><a href="#">About</a></li>
-          <li class="nav-list"><a href="#">Contact</a></li>
-          <li class="nav-list">
-            <svg
-              width="22"
-              height="18"
-              viewBox="0 0 22 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M6.4 2H15.6C16.7531 2 17.4977 2.00156 18.0643 2.04785C18.6077 2.09225 18.8091 2.1676 18.908 2.21799C19.2843 2.40973 19.5903 2.71569 19.782 3.09202C19.8324 3.19091 19.9078 3.39235 19.9521 3.93567C19.9984 4.50235 20 5.24689 20 6.4V11.6C20 12.7531 19.9984 13.4977 19.9521 14.0643C19.9078 14.6077 19.8324 14.8091 19.782 14.908C19.5903 15.2843 19.2843 15.5903 18.908 15.782C18.8091 15.8324 18.6077 15.9078 18.0643 15.9521C17.4977 15.9984 16.7531 16 15.6 16H6.4C5.24689 16 4.50235 15.9984 3.93567 15.9521C3.39235 15.9078 3.19091 15.8324 3.09202 15.782C2.71569 15.5903 2.40973 15.2843 2.21799 14.908C2.1676 14.8091 2.09225 14.6077 2.04785 14.0643C2.00156 13.4977 2 12.7531 2 11.6V6.4C2 5.24689 2.00156 4.50235 2.04785 3.93567C2.09225 3.39235 2.1676 3.19091 2.21799 3.09202C2.40973 2.71569 2.71569 2.40973 3.09202 2.21799C3.19091 2.1676 3.39235 2.09225 3.93567 2.04785C4.50235 2.00156 5.24689 2 6.4 2ZM0 6.4C0 4.15979 0 3.03969 0.435974 2.18404C0.819467 1.43139 1.43139 0.819467 2.18404 0.435974C3.03969 0 4.15979 0 6.4 0H15.6C17.8402 0 18.9603 0 19.816 0.435974C20.5686 0.819467 21.1805 1.43139 21.564 2.18404C22 3.03969 22 4.15979 22 6.4V11.6C22 13.8402 22 14.9603 21.564 15.816C21.1805 16.5686 20.5686 17.1805 19.816 17.564C18.9603 18 17.8402 18 15.6 18H6.4C4.15979 18 3.03969 18 2.18404 17.564C1.43139 17.1805 0.819467 16.5686 0.435974 15.816C0 14.9603 0 13.8402 0 11.6V6.4ZM5.5547 4.16795C5.09517 3.8616 4.4743 3.98577 4.16795 4.4453C3.8616 4.90483 3.98577 5.5257 4.4453 5.83205L10.4453 9.83205C10.7812 10.056 11.2188 10.056 11.5547 9.83205L17.5547 5.83205C18.0142 5.5257 18.1384 4.90483 17.8321 4.4453C17.5257 3.98577 16.9048 3.8616 16.4453 4.16795L11 7.79815L5.5547 4.16795Z"
-                fill="white"
-              />
-            </svg>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
 
-    <!--main-->
-    <main id="main">
-      <!--home page-->
-      <section class="home-page">
-        <h1 class="header">Hey There.<br />I'm Melaku</h1>
-
-        <div class="main-description">
-          <h2 class="description-heading">I'm a Software Developer</h2>
-
-          <p class="description-para">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
+          <nav>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </nav>
+        </header>
+        <section class="head-lines">
+          <h1>I'm Melaku<br />Glad to see <br />you!</h1>
+          <p>
+            I'm a software developer I can help you build a product, feature
+            website Look through some of my work and experience! if you see and
+            have a project you need coded. don't hestiate to contact me.
           </p>
+          <div class="connect"><a href="">LET'S CONNECT</a></div>
+          <ul>
+            <li>
+              <a href=""><img src="./images/twiter.png" alt="twiter" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/linkedin.jpeg" alt="linkedin" /></a>
+            </li>
+            <li>
+              <a href=""> <img src="./images/Muliti.png" alt=" muliti" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/github.png" alt="github" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/sign.png" alt="sign" /></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="work-section">
+        <div class="container container1">
+          <div class="Card1">
+            <img src="images/img5.png" alt="" class="card1" />
+          </div>
+
+          <div class="p-desktop">
+            <div>
+              <h1>Tonic</h1>
+            </div>
+            <div class="lister">
+              <p><strong>CANOPY</strong></p>
+              <div class="point"></div>
+              <p>Back End Dev</p>
+              <div class="point"></div>
+              <p>2015</p>
+            </div>
+
+            <p class="para1">
+              A daily selection of privately personalized roads; no accounts or
+              sign-up required.
+            </p>
+            <ul>
+              <li class="html"><a href="#"> html</a></li>
+              <li class="css"><a href="#">css</a></li>
+              <li class="javaScript"><a href="#">javaScript</a></li>
+            </ul>
+            <div class="to-project"><a href="#">See Project</a></div>
+          </div>
+        </div>
+        <div class="container container2">
+          <div class="Card1">
+            <img src="./images/img4.png" alt="" class="card1" />
+          </div>
+          <div class="p-desktop">
+            <div>
+              <h1>Multi-Post Stories</h1>
+            </div>
+            <div class="lister">
+              <p><strong>CANOPY</strong></p>
+              <div class="point"></div>
+              <p>Back End Dev</p>
+              <div class="point"></div>
+              <p>2015</p>
+            </div>
+
+            <p class="para1">
+              Experimental content creation feature that allows users to add to
+              an existing story over the course of a day without spamming their
+              friends.
+            </p>
+            <ul>
+              <li class="html"><a href="#"> html</a></li>
+              <li class="css"><a href="#">css</a></li>
+              <li class="javaScript"><a href="#">javaScript</a></li>
+            </ul>
+            <div class="to-project"><a href="#">See Project</a></div>
+          </div>
+        </div>
+
+        <div class="container container3">
+          <div class="Card1">
+            <img src="./images/img1.png" alt="" class="card1" />
+          </div>
+
+          <div class="p-desktop">
+            <div>
+              <h1>Facebook 360</h1>
+            </div>
+            <div class="lister">
+              <p><strong>CANOPY</strong></p>
+              <div class="point"></div>
+              <p>Back End Dev</p>
+              <div class="point"></div>
+              <p>2015</p>
+            </div>
+
+            <p class="para1">
+              Exploring the future of media in Facebook's first Virtual Reality
+              app; a place to discover and enjoy 360 photos and videos on Gear
+              VR.
+            </p>
+            <ul>
+              <li class="html"><a href="#"> html</a></li>
+              <li class="css"><a href="#">css</a></li>
+              <li class="javaScript"><a href="#">javaScript</a></li>
+            </ul>
+            <div class="to-project"><a href="#">See Project</a></div>
+          </div>
+        </div>
+        <div class="container container4">
+          <div class="Card1">
+            <img src="images/im2.png" alt="" class="card1" />
+          </div>
+
+          <div class="p-desktop">
+            <div>
+              <h1>Uber Navigation</h1>
+            </div>
+            <div class="lister">
+              <p><strong>CANOPY</strong></p>
+              <div class="point"></div>
+              <p>Back End Dev</p>
+              <div class="point"></div>
+              <p>2015</p>
+            </div>
+
+            <p class="para1">
+              A smart assistant to make driving more safe, efficient, and fun by
+              unlocking your most expensive computer: your car.
+            </p>
+            <ul>
+              <li class="html"><a href="#"> html</a></li>
+              <li class="css"><a href="#">css</a></li>
+              <li class="javaScript"><a href="#">javaScript</a></li>
+            </ul>
+            <div class="to-project"><a href="#">See Project</a></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="About-section">
+        <div class="order-1">
+          <div class="about-title">
+            About <br />
+            Myself
+          </div>
+          <p class="para2">
+            Hello I'm a software developer I can help you build a product,
+            feature or website look through some of my work and experience! if
+            you like what you see and havd a Project you need coded, don't
+            hesitate to contact me.
+          </p>
+          <h3 class="connect">LET'S CONNECT</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/Melaku05"
+                ><img src="./images/github.png" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/melaku-eshetu-b34b36223/"
+                ><img src="./images/linkedin.jpeg" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/sign.png" alt="sign" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/home"
+                ><img src="./images/twiter.png" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href=""> <img src="./images/Muliti.png" alt="muliti" /></a>
+            </li>
+          </ul>
+
+          <div class="get">Get my resume</div>
+        </div>
+        <div class="order-2">
+          <ul>
+            <li>
+              <div class="lang-dropper">
+                Languages
+                <img src="./images/dropBtn.png" id="dropBtn1" alt="" />
+              </div>
+            </li>
+          </ul>
+
+          <div class="lang-flex">
+            <div class="lang"><img src="images/js.png" alt="" />javaScript</div>
+            <div class="lang"><img src="images/html.png" alt="" />HTML</div>
+            <div class="lang"><img src="images/CSS.png" alt="" />CSS</div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <div class="frame">
+                Frameworks
+                <img src="./images/dropBtn2.png" class="dropBtn2" alt="" />
+              </div>
+            </li>
+            <li>
+              <div class="frame">
+                <span id="span">Skills</span
+                ><img src="./images/dropBtn2.png" class="dropBtn2" alt="" />
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!--icons-->
-      <ul class="icons-container bounce">
-        <li>
-          <a href="https://github.com/Melaku05"
-            ><img
-              src="images/social_pic/github.png"
-              alt="github"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/melaku-eshetu-b34b36223/"
-            ><img
-              src="images/social_pic/linkedin.png"
-              alt="linkedin"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img
-              src="images/social_pic/angellist.png"
-              alt="angellist"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/home"
-            ><img
-              src="images/social_pic/twitter.png"
-              alt="twitter"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img
-              src="images/social_pic/medium.png"
-              alt="medium"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-      </ul>
-
-      <!--illustrations-->
-      <div class="illustration-container"><br /></div>
-    </main>
-
-    <section class="work" id="work">
-      <h1 class="work-header">My Recent Works</h1>
-
-      <hr />
-    </section>
-    <section class="container bg-color-2">
-      <div class="grid-layout">
-        <div class="grid-1 display-flex">
-          <div class="img-hover">
-            <ul>
-              <li class="grid-img">
-                <img src="assest/Img-Placeholder.png" alt="img-placeholder" />
-              </li>
-            </ul>
-          </div>
-          <div class="see-projects">
-            <h2>Multi-Post Stories</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <ul class="tags">
-              <li>
-                <span class="tag-border">CSS</span>
-              </li>
-              <li>
-                <span class="tag-border">HTML</span>
-              </li>
-              <li>
-                <span class="tag-border">Bootstrap</span>
-              </li>
-              <li>
-                <span class="tag-border">Ruby</span>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-see">See Project</button>
-          </div>
+      <footer class="Contact-form">
+        <div class="contact-title">Contact me</div>
+        <div class="contact-content">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
         </div>
-        <div class="grid-2 display-grid">
-          <div class="card one">
-            <div class="btn-group">
-              <button type="button" class="btn-2">See Project</button>
-            </div>
-          </div>
-
-          <div class="card two">
-            <div class="block">
-              <h2 class="h-text-white h-text-size">
-                Data Dashboard Healthcare
-              </h2>
-              <p class="p-text-white">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="tags2">
-                <li>
-                  <span class="tag-border tags-color-white html">HTML</span>
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white bootstrap"
-                    >Bootstrap</span
-                  >
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white ruby">Ruby</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card three">
-            <div class="block">
-              <h2 class="h-text-white h-text-size">Website Protfolio</h2>
-              <p class="p-text-white">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="tags2">
-                <li>
-                  <span class="tag-border tags-color-white html">HTML</span>
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white bootstrap"
-                    >Bootstrap</span
-                  >
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white ruby">Ruby</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card four">
-            <div class="block">
-              <h2 class="h-text-white h-text-size">
-                Profesional Art Printing Data More
-              </h2>
-              <p class="p-text-white">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="tags2">
-                <li>
-                  <span class="tag-border tags-color-white html">HTML</span>
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white bootstrap"
-                    >Bootstrap</span
-                  >
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white ruby">Ruby</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card five">
-            <div class="block">
-              <h2 class="h-text-white h-text-size">
-                Data Dashboard Healthcare
-              </h2>
-              <p class="p-text-white">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="tags2">
-                <li>
-                  <span class="tag-border tags-color-white html">HTML</span>
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white bootstrap"
-                    >Bootstrap</span
-                  >
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white ruby">Ruby</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card six">
-            <div class="block">
-              <h2 class="h-text-white h-text-size">Website Protfolio</h2>
-              <p class="p-text-white">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="tags2">
-                <li>
-                  <span class="tag-border tags-color-white html">HTML</span>
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white bootstrap"
-                    >Bootstrap</span
-                  >
-                </li>
-                <li>
-                  <span class="tag-border tags-color-white ruby">Ruby</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--About me-->
-    <section class="about" id="about">
-      <div class="about-section">
-        <div class="about-sub-section">
-          <h1 class="about-header header">About me</h1>
-          <p class="about-description">
-            Hello I'm a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don't
-            hestiate to contact me.
-          </p>
-          <button type="button" class="about-btn btn">Get My Resume</button>
-        </div>
-        <div class="about-illustration">
-          <img src="./assest/illustration-about-me-mobile.png" alt="img" />
-        </div>
-      </div>
-      <hr class="about-line" />
-
-      <!--skills-->
-      <div class="skills">
-        <ul class="skills-lang">
-          <li class="skill-lang-header">
-            <span class="rectangle"
-              ><svg
-                width="27"
-                height="26"
-                viewBox="0 0 27 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.772461"
-                  y="12.7279"
-                  width="18"
-                  height="18"
-                  transform="rotate(-45 0.772461 12.7279)"
-                  fill="#FF6B00"
-                />
-              </svg>
-            </span>
-            Language
-          </li>
-          <li class="skill-lang-li">Javascript</li>
-          <li class="skill-lang-li">Ruby</li>
-          <li class="skill-lang-li">Html</li>
-          <li class="skill-lang-li">Css</li>
-        </ul>
-
-        <ul class="skills-lang">
-          <li class="skill-lang-header">
-            <span class="square"
-              ><svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect y="0.455811" width="18" height="18" fill="#FF6B00" />
-              </svg> </span
-            >Frameworks
-          </li>
-          <li class="skill-lang-li">Bootstrap</li>
-          <li class="skill-lang-li">Ruby on Rails</li>
-          <li class="skill-lang-li">RSPec</li>
-          <li class="skill-lang-li">CapyBara</li>
-          <li class="skill-lang-li">Selenium</li>
-        </ul>
-
-        <ul class="skills-lang">
-          <li class="skill-lang-header">
-            <span class="circle"
-              ><svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  y="0.455811"
-                  width="18"
-                  height="18"
-                  rx="9"
-                  fill="#FF6B00"
-                />
-              </svg> </span
-            >Skills
-          </li>
-          <li class="skill-lang-li">Codekit</li>
-          <li class="skill-lang-li">Github</li>
-          <li class="skill-lang-li">Codepen</li>
-          <li class="skill-lang-li">Gitlab</li>
-          <li class="skill-lang-li">Terminal</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div>
-        <p class="contact-description">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </p>
-      </div>
-
-      <form action="https://formspree.io/f/xknywqjb" method="POST" id="form">
-        <label for="name">
-          <input
-            type="text"
-            id="name"
-            placeholder="Full name"
-            minlength="2"
-            maxlength="30"
-            name="name"
-            required
-          />
-        </label>
-        <label for="email">
-          <input
-            type="email"
-            id="email"
-            placeholder="Email address"
-            name="email"
-            required
-          />
-        </label>
-        <label for="msg">
-          <textarea
-            name="msg"
-            id="msg"
-            cols="30"
-            rows="10"
-            placeholder="Enter text here"
-            maxlength="500"
-          ></textarea>
-        </label>
-        <p id="error"></p>
-        <button type="submit" id="submit" class="project-btn submit btn">
-          Get in touch
-        </button>
-      </form>
-    </section>
-    <footer class="footer">
-      <hr class="form-line" />
-      <ul class="form-icons-container bounce">
-        <li>
-          <a href="#main"
-            ><img
-              src="./assest/icon-dark-1.png"
-              alt="github"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#main"
-            ><img
-              src="./assest/icon-dark-2.png"
-              alt="indeed"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#main"
-            ><img
-              src="./assest/icon-dark-3.png"
-              alt="icon-3"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#main"
-            ><img
-              src="./assest/icon-dark-4.png"
-              alt="icon-4"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#main"
-            ><img
-              src="./assest/icon-dark-5.png"
-              alt="medium"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
-      </ul>
-    </footer>
+        <form action="https://formspree.io/f/xvolalez" method="post">
+          <ul>
+            <li>
+              <input
+                type="text"
+                name="for-name"
+                id="name"
+                placeholder="Put your name"
+                maxlength="30"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                name="for-mail"
+                id="mail"
+                placeholder="put your adress email"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                name="for-text"
+                id="textarea"
+                maxlength="500"
+                cols="30"
+                rows="10"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+            </li>
+            <li><button>Get it Touch</button></li>
+          </ul>
+        </form>
+      </footer>
+    </div>
   </body>
 </html>
