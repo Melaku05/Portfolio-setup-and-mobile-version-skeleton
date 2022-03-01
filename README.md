@@ -1,38 +1,47 @@
-# Portfolio: setup and mobile version skeleton
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-For the first milestone in the process of creating portfolio website
+# Portfolio Application
 
-# Pull request
-
-done in this pull request so that others can read what is being worked on
-
-# Hello Microverse
-
-> This is just mobile first home page project
+> My first portfolio project which is mobile first responsve website
 
 ## Built With
 
-- HTML/CSS
-  -Figma
-  -Linters
-  -GitHub
+- HTML,CSS
+- Figam,Linter,Github
+- Visual Studio code editor
 
-## Getting Started
+## Live Demo (if available)
 
-Run these commands to have this project on you local PC
+[Live Demo Link](https://melaku05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
-```shell
-git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton
-cd Portfolio-setup-and-mobile-version-skeleton
-```
+To get a local copy up and running follow these simple example steps.
 
-## Author
+### Prerequisites:
+
+You need have basic Knowledge of how website work, html,css, code editor
+
+### Setup
+
+### Install
+
+install git in your local machine
+install code editor such as vs code
+
+### Usage
+
+git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton/tree/desktop_version_deployment
+
+### Run tests
+
+open index.html file in the browser you have in your computer
+
+### Deployment
+
+## Authors
 
 👤 **Melaku Eshetu**
 
-- GitHub: [@Melaku05](https://github.com/Melaku05)
+-GitHub: [@Melaku05](https://github.com/Melaku05)
 
 ## Show your support
 
@@ -40,4 +49,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-free to use it
+This project is [MIT](./MIT.md) licensed.
