@@ -38,6 +38,9 @@ a {
   font-weight: bolder;
   color: #8793ff;
 }
+.toolbar {
+  display: flex;
+}
 
 .right-side {
   flex-grow: 1;
@@ -69,6 +72,7 @@ p {
   border: none;
   background: none;
   cursor: pointer;
+  padding-top: 16px;
 }
 
 .x-nav {
@@ -326,7 +330,7 @@ a {
   margin-left: 150px;
 }
 
-#dropBtn2 {
+.dropBtn2 {
   width: 15px;
   height: 20px;
   margin-top: 7px;
