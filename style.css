@@ -15,8 +15,7 @@ body {
 }
 
 .wrapper {
-  background-image: url("./images/backgroundDesk.png"),
-    url("./images/HeaderBck.jpg");
+  background-image: url("./images/backgroundDesk.png");
   background-size: cover;
   padding-bottom: 90px;
   font-family: "Poppins", sans-serif;
@@ -158,8 +157,7 @@ h2 {
 
 .lister {
   display: flex;
-  margin-left: 39px;
-  margin: 20px;
+  margin: 20px 20px 20px 39px;
   font-weight: bold;
 }
 
@@ -192,7 +190,6 @@ a {
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
-  padding-bottom: 40px;
 }
 
 #html:hover {
@@ -204,7 +201,6 @@ a {
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
-  padding-bottom: 40px;
 }
 
 #css {
@@ -213,7 +209,6 @@ a {
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
-  padding-bottom: 40px;
 }
 
 #css:hover {
@@ -226,7 +221,6 @@ a {
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
-  padding-bottom: 40px;
   width: 120px;
 }
 
@@ -236,7 +230,6 @@ a {
 }
 
 .to-project {
-  padding-bottom: 40px;
   border: 1px solid blue;
   height: 45px;
   width: 140px;
@@ -281,7 +274,6 @@ a {
 }
 
 .get {
-  padding-bottom: 40px;
   border: 2px solid #865ae5;
   height: 45px;
   width: 150px;
@@ -350,8 +342,10 @@ a {
   flex-direction: column;
 }
 
+/* prettier-ignore */
 .Contact-form {
-  background-image: url("./images/ContactShapes.png"),
+  background-image:
+    url("./images/ContactShapes.png"),
     url("./images/ContactFormBck.jpg");
   background-size: cover;
   margin-top: 40px;
@@ -453,13 +447,14 @@ form button:hover:active {
     align-self: center;
     background-color: #f7f7f9;
   }
+
   .wrapper {
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     margin: 0;
     align-self: center;
-    border-radius: 0px 0px 0px 90px;
+    border-radius: 0 0 0 90px;
   }
 
   .head-lines {
@@ -511,7 +506,6 @@ form button:hover:active {
   }
 
   .About-section {
-    display: block;
     width: 100%;
     padding: 65px;
     display: flex;
@@ -552,17 +546,13 @@ form button:hover:active {
     color: rgb(245, 223, 223);
   }
 
-   {
-    display: none;
-  }
-
   .lang {
     width: 130px;
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0 0 20px;
     margin: 7px;
   }
 
