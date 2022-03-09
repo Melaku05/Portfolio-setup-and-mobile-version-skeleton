@@ -17,6 +17,7 @@ body {
 .wrapper {
   background-image: url("./images/backgroundDesk.png");
   background-size: cover;
+  background-position: 5px;
   padding-bottom: 90px;
   font-family: "Poppins", sans-serif;
   padding-left: 30px;
