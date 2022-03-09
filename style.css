@@ -15,9 +15,9 @@ body {
 }
 
 .wrapper {
-  background-image: url("./images/backgroundDesk.png");
+  background-image: url("./images/backgroundDesk.png"),
+    url("./images/HeaderBck.jpg");
   background-size: cover;
-  background-position: 5px;
   padding-bottom: 90px;
   font-family: "Poppins", sans-serif;
   padding-left: 30px;
@@ -38,14 +38,6 @@ a {
   text-decoration: none;
   font-weight: bolder;
   color: #8793ff;
-}
-
-.logo {
-  transition: transform ease-in-out 0.5s;
-}
-
-.logo:hover {
-  transform: rotate(10deg);
 }
 
 .right-side {
@@ -74,14 +66,28 @@ p {
   margin-right: 20px;
 }
 
-.desktop-nav {
+.nav-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.x-nav {
+  cursor: pointer;
   display: none;
+}
+
+.x-nav img {
+  width: 15px;
+  height: 15px;
+  float: right;
+  margin: 15px;
 }
 
 h1 {
   font-size: 40px;
   padding-bottom: 20px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .work-section {
@@ -131,22 +137,28 @@ h1 {
 }
 
 .card1:hover {
-  transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5);
 }
 
 .Card1 {
   align-self: center;
 }
 
-.para1 {
+#para1 {
   font-size: 18px;
   font-weight: 400;
   margin-left: 25px;
   color: rgb(23, 43, 77);
 }
 
+h1,
+h2 {
+  margin-left: 25px;
+}
+
 .lister {
   display: flex;
+  margin-left: 39px;
   margin: 20px;
   font-weight: bold;
 }
@@ -167,21 +179,23 @@ ul,
 li,
 a {
   display: flex;
+  margin-top: 10px;
   margin-left: 10px;
   text-decoration: none;
   font-size: 20px;
   color: rgb(83, 83, 206);
 }
 
-.html {
+#html {
   width: 70px;
   background-color: #ebebebff;
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
+  padding-bottom: 40px;
 }
 
-.html:hover {
+#html:hover {
   background-color: skyblue;
   transition: all ease 2s;
 }
@@ -190,40 +204,44 @@ a {
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
+  padding-bottom: 40px;
 }
 
-.css {
+#css {
   width: 50px;
   background-color: #ebebebff;
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
+  padding-bottom: 40px;
 }
 
-.css:hover {
+#css:hover {
   background-color: skyblue;
   transition: all ease 2s;
 }
 
-.javaScript {
+#javaScript {
   background-color: #ebebebff;
   padding-bottom: 40px;
   height: 33px;
   border-radius: 10px;
+  padding-bottom: 40px;
   width: 120px;
 }
 
-.javaScript:hover {
+#javaScript:hover {
   background-color: skyblue;
   transition: all ease 2s;
 }
 
 .to-project {
   padding-bottom: 40px;
-  border: 1px solid #396df2;
+  border: 1px solid blue;
   height: 45px;
   width: 140px;
   border-radius: 10px;
+  padding-bottom: 40px;
   margin: 20px;
 }
 
@@ -263,12 +281,13 @@ a {
 }
 
 .get {
-  border: 2px solid rgb(106, 106, 233);
+  padding-bottom: 40px;
+  border: 2px solid #865ae5;
   height: 45px;
   width: 150px;
   border-radius: 10px;
   margin: 20px;
-  color: rgb(106, 106, 233);
+  color: #865ae5;
   font-weight: bold;
   padding: 10px 10px;
 }
@@ -286,7 +305,7 @@ a {
 .connect {
   margin-left: 25px;
   padding-top: 20px;
-  color: rgb(135, 135, 231);
+  color: #865ae5;
 }
 
 .About-section {
@@ -315,7 +334,7 @@ a {
   margin-left: 150px;
 }
 
-.dropBtn2 {
+#dropBtn2 {
   width: 15px;
   height: 20px;
   margin-top: 7px;
@@ -331,10 +350,8 @@ a {
   flex-direction: column;
 }
 
-/* prettier-ignore */
 .Contact-form {
-  background-image:
-    url("./images/ContactShapes.png"),
+  background-image: url("./images/ContactShapes.png"),
     url("./images/ContactFormBck.jpg");
   background-size: cover;
   margin-top: 40px;
@@ -357,6 +374,13 @@ form ul {
 
 #textarea {
   padding-top: 20px;
+}
+
+textarea:hover,
+input:hover {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
 }
 
 #name,
@@ -418,8 +442,8 @@ form button:hover:active {
     display: flex;
   }
 
-  header {
-    margin: 0 154px 100px 122px;
+  .x-nav {
+    display: none;
   }
 
   .main-wrapper {
@@ -429,14 +453,13 @@ form button:hover:active {
     align-self: center;
     background-color: #f7f7f9;
   }
-
   .wrapper {
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     margin: 0;
     align-self: center;
-    border-radius: 0 0 0 90px;
+    border-radius: 0px 0px 0px 90px;
   }
 
   .head-lines {
@@ -444,6 +467,7 @@ form button:hover:active {
   }
 
   .desktop-nav {
+    margin: 0;
     display: block;
   }
 
@@ -482,11 +506,12 @@ form button:hover:active {
     margin: 10px;
   }
 
-  .para1 {
+  #para1 {
     margin-top: 50px;
   }
 
   .About-section {
+    display: block;
     width: 100%;
     padding: 65px;
     display: flex;
@@ -527,13 +552,17 @@ form button:hover:active {
     color: rgb(245, 223, 223);
   }
 
+   {
+    display: none;
+  }
+
   .lang {
     width: 130px;
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 0 0 20px;
+    padding: 20px 0px 0px 20px;
     margin: 7px;
   }
 
@@ -546,5 +575,32 @@ form button:hover:active {
   .lang-flex {
     display: flex;
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .desktop-nav {
+    background-color: rgba(0, 0, 255, 0.438);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .desktop-nav ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .desktop-nav ul a {
+    color: white;
+    font-size: 32px;
   }
 }
