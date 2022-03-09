@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -15,10 +15,10 @@ body {
 }
 
 .wrapper {
-  background-image: url("./images/backgroundDesk.png");
+  background-image: url('./images/backgroundDesk.png');
   background-size: cover;
   padding-bottom: 90px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding-left: 30px;
   margin-right: 30px;
 }
@@ -38,6 +38,7 @@ a {
   font-weight: bolder;
   color: #8793ff;
 }
+
 .toolbar {
   display: flex;
 }
