@@ -4,299 +4,162 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Responsive website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/mobile.css" />
+    <title>Melaku Eshetu portfolio</title>
   </head>
-
   <body>
-    <div class="main-wrapper">
-      <div class="wrapper">
-        <header class="toolbar">
-          <div class="right-side">
-            <div class="logo"><a href="#">My logo</a></div>
-          </div>
-
-          <nav class="desktop-nav">
-            <div class="x-nav">
-              <img src="images/closeMark.png" alt="close mark" />
-            </div>
-            <ul>
-              <li><a href="#ancre1">Portfolio</a></li>
-              <li><a href="#ancre2">About</a></li>
-              <li><a href="#ancre3">Contact</a></li>
-            </ul>
-          </nav>
-
-          <nav class="nav-btn">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-          </nav>
-        </header>
-        <section id="ancre1" class="head-lines">
-          <h1>I'm Melaku<br />Glad to see <br />you!</h1>
-          <p>
-            I'm a software developer I can help you build a product, feature
-            website Look through some of my work and experience! if you see and
-            have a project you need coded. don't hestiate to contact me.
-          </p>
-          <div class="connect"><a href="">LET'S CONNECT</a></div>
-          <ul>
-            <li>
-              <a href=""><img src="./images/twiter.png" alt="twiter" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/linkedin.jpeg" alt="linkedin" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="./images/Muliti.png" alt=" muliti" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/github.png" alt="github" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/sign.png" alt="sign" /></a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="work-section">
-        <div class="container container1">
-          <div class="Card1">
-            <img src="images/img5.png" alt="" class="card1" />
-          </div>
-
-          <div class="p-desktop">
-            <div>
-              <h1>Tonic</h1>
-            </div>
-            <div class="lister">
-              <p><strong>CANOPY</strong></p>
-              <div class="point"></div>
-              <p>Back End Dev</p>
-              <div class="point"></div>
-              <p>2015</p>
-            </div>
-
-            <p class="para1">
-              A daily selection of privately personalized roads; no accounts or
-              sign-up required.
-            </p>
-            <ul>
-              <li class="html"><a href="#"> html</a></li>
-              <li class="css"><a href="#">css</a></li>
-              <li class="javaScript"><a href="#">javaScript</a></li>
-            </ul>
-            <div class="to-project"><a href="#">See Project</a></div>
-          </div>
-        </div>
-        <div class="container container2">
-          <div class="Card1">
-            <img src="./images/img4.png" alt="" class="card1" />
-          </div>
-          <div class="p-desktop">
-            <div>
-              <h1>Multi-Post Stories</h1>
-            </div>
-            <div class="lister">
-              <p><strong>CANOPY</strong></p>
-              <div class="point"></div>
-              <p>Back End Dev</p>
-              <div class="point"></div>
-              <p>2015</p>
-            </div>
-
-            <p class="para1">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul>
-              <li class="html"><a href="#"> html</a></li>
-              <li class="css"><a href="#">css</a></li>
-              <li class="javaScript"><a href="#">javaScript</a></li>
-            </ul>
-            <div class="to-project"><a href="#">See Project</a></div>
+    <section class="container">
+      <nav class="normal-button">
+        <div class="logo">
+          <div class="placeholder">
+            <div><a href="/"></a></div>
+            <div>My Logo</div>
           </div>
         </div>
 
-        <div class="container container3">
-          <div class="Card1">
-            <img src="./images/img1.png" alt="" class="card1" />
+        <button type="button" class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button type="button" id="close" class="hide">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-ul">
+          <li><a href="#portfolio" class="nav-text-1">Portfolio</a></li>
+          <li><a href="#about" class="nav-text-2">About</a></li>
+          <li><a href="#contact" class="nav-text-3">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="headline">
+        <div class="bg-image-1">
+          <div class="text-container">
+            <h1 class="lg-text-1">I’m Melaku Glad to see you!</h1>
+            <h2 class="sm-text-1">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </h2>
+            <h3 class="lg-text-3 slidein">Let's connect</h3>
           </div>
-
-          <div class="p-desktop">
-            <div>
-              <h1>Facebook 360</h1>
-            </div>
-            <div class="lister">
-              <p><strong>CANOPY</strong></p>
-              <div class="point"></div>
-              <p>Back End Dev</p>
-              <div class="point"></div>
-              <p>2015</p>
-            </div>
-
-            <p class="para1">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <ul>
-              <li class="html"><a href="#"> html</a></li>
-              <li class="css"><a href="#">css</a></li>
-              <li class="javaScript"><a href="#">javaScript</a></li>
-            </ul>
-            <div class="to-project"><a href="#">See Project</a></div>
-          </div>
-        </div>
-        <div class="container container4">
-          <div class="Card1">
-            <img src="images/im2.png" alt="" class="card1" />
-          </div>
-
-          <div class="p-desktop">
-            <div>
-              <h1>Uber Navigation</h1>
-            </div>
-            <div class="lister">
-              <p><strong>CANOPY</strong></p>
-              <div class="point"></div>
-              <p>Back End Dev</p>
-              <div class="point"></div>
-              <p>2015</p>
-            </div>
-
-            <p class="para1">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <ul>
-              <li class="html"><a href="#"> html</a></li>
-              <li class="css"><a href="#">css</a></li>
-              <li class="javaScript"><a href="#">javaScript</a></li>
-            </ul>
-            <div class="to-project"><a href="#">See Project</a></div>
-          </div>
-        </div>
-      </div>
-
-      <section id="ancre2" class="About-section">
-        <div class="order-1">
-          <div class="about-title">
-            About <br />
-            Myself
-          </div>
-          <p class="para2">
-            Hello I'm a software developer I can help you build a product,
-            feature or website look through some of my work and experience! if
-            you like what you see and havd a Project you need coded, don't
-            hesitate to contact me.
-          </p>
-          <h3 class="connect">LET'S CONNECT</h3>
-          <ul>
-            <li>
-              <a href="https://github.com/Melaku05"
-                ><img src="./images/github.png" alt="github"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/melaku-eshetu-b34b36223/"
-                ><img src="./images/linkedin.jpeg" alt="linkedin"
-              /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/sign.png" alt="sign" /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/home"
-                ><img src="./images/twiter.png" alt="twitter"
-              /></a>
-            </li>
-            <li>
-              <a href=""> <img src="./images/Muliti.png" alt="muliti" /></a>
-            </li>
-          </ul>
-
-          <div class="get">Get my resume</div>
-        </div>
-        <div class="order-2">
-          <ul>
-            <li>
-              <div class="lang-dropper">
-                Languages
-                <img src="./images/dropBtn.png" id="dropBtn1" alt="" />
-              </div>
-            </li>
-          </ul>
-
-          <div class="lang-flex">
-            <div class="lang"><img src="images/js.png" alt="" />javaScript</div>
-            <div class="lang"><img src="images/html.png" alt="" />HTML</div>
-            <div class="lang"><img src="images/CSS.png" alt="" />CSS</div>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <div class="frame">
-                Frameworks
-                <img src="./images/dropBtn2.png" class="dropBtn2" alt="" />
-              </div>
-            </li>
-            <li>
-              <div class="frame">
-                <span id="span">Skills</span
-                ><img src="./images/dropBtn2.png" class="dropBtn2" alt="" />
-              </div>
-            </li>
+          <ul class="social-media">
+            <li><img src="./assets/twitter.svg" alt="icon" /></li>
+            <li><img src="./assets/linkedin.svg" alt="icon" /></li>
+            <li><img src="./assets/M.svg" alt="icon" /></li>
+            <li><img src="./assets/cat.svg" alt="icon" /></li>
+            <li><img src="./assets/victory.svg" alt="icon" /></li>
           </ul>
         </div>
       </section>
 
-      <footer id="ancre3" class="Contact-form">
-        <div class="contact-title">Contact me</div>
-        <div class="contact-content">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
+      <section id="portfolio">
+        <section id="portfolio-1"></section>
+        <section id="portfolio-2"></section>
+        <section id="portfolio-3"></section>
+        <section id="portfolio-4"></section>
+      </section>
+      <section id="myModal" class="modal"></section>
+
+      <section id="about">
+        <div class="div-container about">
+          <div class="top">
+            <h2 class="lg-text-1 text-width">About Myself</h2>
+            <p class="sm-text-1">
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <h3 class="lg-text-3">Let's connect</h3>
+            <ul class="social-media-2">
+              <li><img src="./assets/cat.svg" alt="icon" /></li>
+              <li><img src="./assets/linkedin.svg" alt="icon" /></li>
+              <li><img src="./assets/victory.svg" alt="icon" /></li>
+              <li><img src="./assets/twitter.svg" alt="icon" /></li>
+              <li><img src="./assets/M.svg" alt="icon" /></li>
+            </ul>
+            <button class="btn actions" type="button">Get my resume</button>
+          </div>
+          <div class="skill-list">
+            <div class="languages">
+              <h3 class="sm-text-2">Languages</h3>
+            </div>
+            <ul class="language-list">
+              <li>
+                <img src="./assets/javascript.svg" alt="javascript" />JavaScript
+              </li>
+              <li><img src="./assets/html.svg" alt="html" />HTML</li>
+              <li><img src="./assets/css.svg" alt="css" />CSS</li>
+            </ul>
+            <div class="frameworks">
+              <h3 class="sm-text-2">Frameworks</h3>
+            </div>
+            <hr />
+            <div class="skills">
+              <h3 class="sm-text-2">Skills</h3>
+            </div>
+            <hr />
+          </div>
         </div>
-        <form action="https://formspree.io/f/xvolalez" method="post">
-          <ul>
-            <li>
-              <input
-                type="text"
-                name="for-name"
-                id="name"
-                placeholder="Put your name"
-                maxlength="30"
-                required
-              />
-            </li>
-            <li>
-              <input
-                type="email"
-                name="for-mail"
-                id="mail"
-                placeholder="put your adress email"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                name="for-text"
-                id="textarea"
-                maxlength="500"
-                cols="30"
-                rows="10"
-                placeholder="Write your message here"
-                required
-              ></textarea>
-            </li>
-            <li><button>Get it Touch</button></li>
-          </ul>
-        </form>
+      </section>
+      <footer class="bg-color-1" id="contact">
+        <div class="contact-me">
+          <div class="bg-image-2">
+            <div class="contact-container">
+              <h2 class="lg-text-4">Contact me</h2>
+              <p class="sm-text-3">
+                If you have an application you are interested in developing, a
+                feature that you need built or a project that needs coding. I’d
+                love to help with it
+              </p>
+
+              <form
+                action="https://formspree.io/f/mzborojb"
+                method="POST"
+                class="form"
+              >
+                <label for="fullname"></label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Put your name"
+                  required
+                  maxlength="30"
+                />
+                <label for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="put your email address"
+                  required
+                />
+                <label for="feedback"></label>
+                <textarea
+                  rows="5"
+                  cols="30"
+                  id="feedback"
+                  name="feedback"
+                  placeholder="Write your message here"
+                  required
+                  maxlength="500"
+                ></textarea>
+                <input type="submit" class="btn-1" value="Get in Touch" />
+              </form>
+            </div>
+          </div>
+        </div>
       </footer>
-    </div>
-    <script src="main.js"></script>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
