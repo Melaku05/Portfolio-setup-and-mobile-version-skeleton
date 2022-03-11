@@ -124,6 +124,7 @@
                 action="https://formspree.io/f/mzborojb"
                 method="POST"
                 class="form"
+                onchange="saveUserDetails()"
               >
                 <label for="fullname"></label>
                 <input
@@ -152,6 +153,7 @@
                   required
                   maxlength="500"
                 ></textarea>
+                <small class="error-text"></small>
                 <input type="submit" class="btn-1" value="Get in Touch" />
               </form>
             </div>
