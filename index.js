@@ -275,3 +275,33 @@ function validateEmail(input, invalidLowercase) {
   }
   return showError(input, invalidLowercase);
 }
+
+// local storage
+function saveUserDetails() {
+  const formData = new FormData(form);
+  const fullname = formData.get('fullname');
+  const email = formData.get('email');
+  const feedback = formData.get('feedback');
+  const myFormData = { name: fullname, email, feedback };
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailValid = validateEmail(emailInput, INPUT_LOWERCASE);
+  if (emailValid) {
+    form.submit();
+    saveUserDetails();
+  }
+});
+
+const stored = localStorage.getItem('myFormData');
+
+function getUserDetails(localObj) {
+  const userDetails = JSON.parse(localObj);
+  form.fullname.value = userDetails.name;
+  form.email.value = userDetails.email;
+  form.feedback.value = userDetails.feedback;
+}
+
+getUserDetails(stored);
