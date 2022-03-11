@@ -183,3 +183,17 @@
     gap: 10px;
   }
 }
+
+/* form error */
+.error-text {
+  color: #fff;
+  font-size: 22px;
+  height: 60px;
+  align-self: flex-start;
+  width: 100%;
+  padding: 10px 14px;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: inherit;
+}

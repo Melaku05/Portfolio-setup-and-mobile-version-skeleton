@@ -8,7 +8,8 @@ const data = [
       year: '2015',
     },
     description: {
-      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
@@ -33,7 +34,8 @@ const data = [
       year: '2015',
     },
     description: {
-      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
@@ -58,7 +60,8 @@ const data = [
       year: '2015',
     },
     description: {
-      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
@@ -83,7 +86,8 @@ const data = [
       year: '2015',
     },
     description: {
-      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
@@ -187,8 +191,10 @@ Array.from(portfolio.children).forEach((child, index) => {
 
 // modals
 Array.from(portfolio.children).forEach((item, index) => {
-  item.firstElementChild.lastElementChild.lastElementChild.firstElementChild.addEventListener('click', () => {
-    modal.innerHTML = `
+  item.firstElementChild.lastElementChild.lastElementChild.firstElementChild.addEventListener(
+    'click',
+    () => {
+      modal.innerHTML = `
     <!-- Modal content -->
     <section class="modal-content">
       <div class="popup-text-group">
@@ -226,21 +232,76 @@ Array.from(portfolio.children).forEach((item, index) => {
     </section>
     `;
 
-    const ulList = document.querySelector('.popup-block .tags');
+      const ulList = document.querySelector('.popup-block .tags');
 
-    Object.keys(data[index].technologies).forEach((e) => {
-      ulList.innerHTML += `<li>${data[index].technologies[e]}</li>`;
-    });
+      Object.keys(data[index].technologies).forEach((e) => {
+        ulList.innerHTML += `<li>${data[index].technologies[e]}</li>`;
+      });
 
-    modal.style.display = 'block';
-    const span = document.getElementsByClassName('close')[0];
-    span.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-    window.addEventListener('click', (e) => {
-      if (e.target === modal) {
+      modal.style.display = 'block';
+      const span = document.getElementsByClassName('close')[0];
+      span.addEventListener('click', () => {
         modal.style.display = 'none';
-      }
-    });
-  });
+      });
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+  );
 });
+
+// form validation
+const form = document.querySelector('.form');
+const emailInput = form.elements.email;
+
+const INPUT_LOWERCASE = 'Error : Please enter a lowercase input';
+
+function showMessage(input, message, type) {
+  const msg = document.querySelector('.error-text');
+  msg.innerText = message;
+  input.className = type ? 'success' : 'error';
+  return type;
+}
+
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function validateEmail(input, invalidLowercase) {
+  if (input.value === input.value.toLowerCase()) {
+    return true;
+  }
+  return showError(input, invalidLowercase);
+}
+
+// local storage
+function saveUserDetails() {
+  const formData = new FormData(form);
+  const fullname = formData.get('fullname');
+  const email = formData.get('email');
+  const feedback = formData.get('feedback');
+  const myFormData = { name: fullname, email, feedback };
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailValid = validateEmail(emailInput, INPUT_LOWERCASE);
+  if (emailValid) {
+    form.submit();
+    saveUserDetails();
+  }
+});
+
+const stored = localStorage.getItem('myFormData');
+
+function getUserDetails(localObj) {
+  const userDetails = JSON.parse(localObj);
+  form.fullname.value = userDetails.name;
+  form.email.value = userDetails.email;
+  form.feedback.value = userDetails.feedback;
+}
+
+getUserDetails(stored);
