@@ -8,8 +8,7 @@ const data = [
       year: '2015',
     },
     description: {
-      summary:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
@@ -34,8 +33,7 @@ const data = [
       year: '2015',
     },
     description: {
-      summary:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
@@ -60,8 +58,7 @@ const data = [
       year: '2015',
     },
     description: {
-      summary:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
@@ -86,8 +83,7 @@ const data = [
       year: '2015',
     },
     description: {
-      summary:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       portfolio:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s",
     },
@@ -191,10 +187,8 @@ Array.from(portfolio.children).forEach((child, index) => {
 
 // modals
 Array.from(portfolio.children).forEach((item, index) => {
-  item.firstElementChild.lastElementChild.lastElementChild.firstElementChild.addEventListener(
-    'click',
-    () => {
-      modal.innerHTML = `
+  item.firstElementChild.lastElementChild.lastElementChild.firstElementChild.addEventListener('click', () => {
+    modal.innerHTML = `
     <!-- Modal content -->
     <section class="modal-content">
       <div class="popup-text-group">
@@ -232,24 +226,23 @@ Array.from(portfolio.children).forEach((item, index) => {
     </section>
     `;
 
-      const ulList = document.querySelector('.popup-block .tags');
+    const ulList = document.querySelector('.popup-block .tags');
 
-      Object.keys(data[index].technologies).forEach((e) => {
-        ulList.innerHTML += `<li>${data[index].technologies[e]}</li>`;
-      });
+    Object.keys(data[index].technologies).forEach((e) => {
+      ulList.innerHTML += `<li>${data[index].technologies[e]}</li>`;
+    });
 
-      modal.style.display = 'block';
-      const span = document.getElementsByClassName('close')[0];
-      span.addEventListener('click', () => {
+    modal.style.display = 'block';
+    const span = document.getElementsByClassName('close')[0];
+    span.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
         modal.style.display = 'none';
-      });
-      window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    }
-  );
+      }
+    });
+  });
 });
 
 // form validation
