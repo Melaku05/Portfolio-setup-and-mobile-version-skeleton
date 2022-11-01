@@ -21,7 +21,8 @@ Enjoy your API!
 
 ## Usage
 
-```git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton/tree/desktop_version_deployment```
+``` git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton/tree/desktop_version_deployment 
+```
 
 
 
