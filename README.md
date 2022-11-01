@@ -2,7 +2,7 @@
 
 # Portfolio Application
 
-> I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+`I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.`
 
 Enjoy your API!
 
@@ -37,7 +37,7 @@ git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleto
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Melaku05/booking-app-backend/issues).
+Feel free to check the [issues page](https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton/issues).
 
 ## Show your support
 
