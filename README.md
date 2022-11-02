@@ -8,6 +8,9 @@ Enjoy your API!
 
 [Live Demo Link](https://melaku05.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
+## Screenshot
+
+
 ## Built With
 
 - HTML
@@ -20,9 +23,11 @@ Enjoy your API!
 
 
 ## Usage
-
-``` git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton/tree/desktop_version_deployment 
 ```
+ git clone https://github.com/Melaku05/Portfolio-setup-and-mobile-version-skeleton.git
+
+```
+
 
 
 
