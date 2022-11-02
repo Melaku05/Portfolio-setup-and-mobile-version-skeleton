@@ -14,7 +14,7 @@ const data = [
         'This app uses a Rails back-end as an API to send doctor details and appointment data to the frontend of a booking application.',
     },
     image: {
-      mobile: '',
+      mobile: './assets/portfolio/booking-mobile-1.png',
       desktop: './assets/desktop/booking-desktop-1.png',
     },
     technologies: {
